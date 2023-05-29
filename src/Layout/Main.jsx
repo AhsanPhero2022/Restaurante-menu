@@ -5,7 +5,8 @@ import NavItem from "../pages/Shared/Footer/Navbar/NavItem";
 
 const Main = () => {
   const location = useLocation();
-  const isLogin = location.pathname.includes("login");
+  const isLogin =
+    location.pathname.includes("login") || location.pathname.includes("signup");
 
   return (
     <div>
