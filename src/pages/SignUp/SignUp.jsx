@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../components/Providers/AuthProvider";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const {
@@ -109,6 +110,10 @@ const SignUp = () => {
                 />
               </div>
             </form>
+            <p>
+              Already have an account
+              <Link to="/login">Login</Link>
+            </p>
           </div>
         </div>
       </div>
