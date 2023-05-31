@@ -32,10 +32,10 @@ const NavItem = () => {
         <Link to="/secret">Secret</Link>
       </li>
       <div className="mx-2">
-        <button className="btn gap-1">
+        <Link to="/dashboard/mycart" className="btn gap-1">
           <FaShoppingCart></FaShoppingCart>
           <div className="badge badge-secondary">+{cart?.length || 0}</div>
-        </button>
+        </Link>
       </div>
 
       {user ? (
